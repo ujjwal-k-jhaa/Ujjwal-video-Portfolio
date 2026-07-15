@@ -1,0 +1,1531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Uk Jha | High-Retention Video Editor for Creators & Brands</title>
+    <meta
+      name="description"
+      content="Professional freelance video editor specializing in high-retention YouTube edits, viral short-form content, and cinematic storytelling."
+    />
+    <meta
+      name="keywords"
+      content="Uk Jha, video editor, high retention, short form editor, youtube editor, thumbnail design"
+    />
+    <meta name="author" content="Uk Jha" />
+    <meta name="theme-color" content="#fdfbfb" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ujjwaljha.com/" />
+    <meta property="og:title" content="Uk Jha | High-Retention Video Editor" />
+    <meta
+      property="og:description"
+      content="Transforming raw footage into high-engaging visual narratives. Specialist in advanced sound design and color grading."
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/xSQP0sbn/Ujjwal-Jha.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://i.ibb.co" />
+    <link rel="preconnect" href="https://upload.wikimedia.org" />
+    <link rel="preconnect" href="https://iili.io" />
+    <link rel="preconnect" href="https://i.postimg.cc" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i.ibb.co/xSQP0sbn/Ujjwal-Jha.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* 1. Reset and Base Structuring */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:
+          "Inter",
+          -apple-system,
+          sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        /* High-performance CSS background glow replacing heavy empty markup divs */
+        background:
+          radial-gradient(
+            circle at 0% 0%,
+            rgba(180, 200, 255, 0.25) 0%,
+            transparent 35%
+          ),
+          radial-gradient(
+            circle at 100% 30%,
+            rgba(255, 200, 220, 0.25) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 10% 70%,
+            rgba(200, 255, 230, 0.2) 0%,
+            transparent 45%
+          ),
+          linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+        color: #000000;
+        overflow-x: hidden;
+        line-height: 1.5;
+      }
+
+      img,
+      iframe {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* 2. Core GPU-Accelerated Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes navFadeDown {
+        from {
+          opacity: 0;
+          top: -1rem;
+          transform: translateX(-50%);
+        }
+        to {
+          opacity: 1;
+          top: 1.5rem;
+          transform: translateX(-50%);
+        }
+      }
+      @keyframes pulseGreen {
+        70% {
+          box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+        }
+      }
+      @keyframes scrollRight {
+        0% {
+          transform: translateX(-50%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      /* 3. Global Typography components */
+      .section-title {
+        text-align: center;
+        font-size: clamp(2rem, 5vw, 2.8rem);
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin-bottom: 0.8rem;
+      }
+      .section-subtitle {
+        text-align: center;
+        font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+        color: #444444;
+        margin-bottom: clamp(2.5rem, 8vw, 4rem);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1.5rem;
+      }
+
+      /* 4. Adaptive Navigation */
+      .premium-nav {
+        position: fixed;
+        top: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 1100px;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(24px) saturate(180%);
+        -webkit-backdrop-filter: blur(24px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 100px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        animation: navFadeDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .nav-logo a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+      }
+      .nav-logo img {
+        height: clamp(28px, 4vw, 34px);
+        width: auto;
+      }
+      .nav-logo span {
+        font-family: "Pacifico", cursive;
+        font-size: clamp(1.3rem, 3.5vw, 1.6rem);
+        color: #000000;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2.5rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #444;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+      .nav-links a:hover {
+        color: #000000;
+      }
+
+      .btn-nav {
+        text-decoration: none;
+        padding: 0.65rem 1.5rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #000000;
+        border-radius: 50px;
+        transition: background 0.3s;
+        white-space: nowrap;
+      }
+      .btn-nav:hover {
+        background: #333333;
+      }
+
+      /* 5. Glass Hero Block */
+      .glass-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: clamp(2.5rem, 6vw, 4rem) 1rem;
+        margin: max(120px, 15vh) auto 50px auto;
+        width: 90%;
+        max-width: 900px;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 32px;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.05);
+        animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        padding: 0.5rem 1.2rem;
+        border-radius: 50px;
+        font-size: clamp(0.75rem, 2vw, 0.85rem);
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+      .pulse-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #22c55e;
+        border-radius: 50%;
+        animation: pulseGreen 2s infinite;
+      }
+
+      .glass-hero h1 {
+        font-size: clamp(1.8rem, 6vw, 3.5rem);
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -1.5px;
+        margin-bottom: 1.2rem;
+        background: linear-gradient(90deg, #000000, #444444);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glass-hero p {
+        font-size: clamp(1rem, 2.5vw, 1.15rem);
+        color: #444444;
+        margin-bottom: 2.5rem;
+        max-width: 600px;
+      }
+
+      .hero-ctas {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 3.5rem;
+      }
+      .btn {
+        text-decoration: none;
+        padding: 0.9rem 2rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        border-radius: 50px;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+      .btn-primary {
+        color: white;
+        background: #000000;
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+      .btn-secondary {
+        color: #000000;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+      }
+      .btn-secondary:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      /* 6. Marquee Architecture */
+      .software-track-container {
+        width: 100%;
+        max-width: 600px;
+        overflow: hidden;
+        -webkit-mask-image: linear-gradient(
+          to right,
+          transparent,
+          black 15%,
+          black 85%,
+          transparent
+        );
+        mask-image: linear-gradient(
+          to right,
+          transparent,
+          black 15%,
+          black 85%,
+          transparent
+        );
+      }
+      .software-marquee {
+        display: flex;
+        align-items: center;
+        gap: clamp(2rem, 5vw, 3.5rem);
+        width: max-content;
+        animation: scrollRight 18s linear infinite;
+      }
+      .software-marquee img {
+        height: clamp(32px, 5vw, 42px);
+        width: auto;
+        opacity: 0.85;
+      }
+
+      /* 7. Bento Grid Framework */
+      .services-section {
+        padding: 4rem max(1rem, 4vw);
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .bento-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      .bento-card {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 28px;
+        padding: clamp(1.5rem, 4vw, 2.5rem);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
+        transition:
+          transform 0.3s,
+          background 0.3s;
+        display: flex;
+        flex-direction: column;
+      }
+      .bento-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.6);
+      }
+      .bento-card.highlight {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.7) 0%,
+          rgba(240, 245, 255, 0.5) 100%
+        );
+      }
+      .bento-icon {
+        font-size: clamp(1.8rem, 4vw, 2.2rem);
+        margin-bottom: 1.2rem;
+      }
+      .bento-card h3 {
+        font-size: clamp(1.3rem, 3vw, 1.6rem);
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+        letter-spacing: -0.5px;
+      }
+      .bento-card p {
+        color: #444444;
+        font-size: clamp(0.95rem, 2vw, 1.05rem);
+      }
+
+      .feature-list {
+        list-style: none;
+        margin-top: 1.5rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        padding-top: 1.5rem;
+        flex-grow: 1;
+      }
+      .feature-list li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.95rem;
+        color: #444444;
+        margin-bottom: 0.8rem;
+        font-weight: 500;
+      }
+      .check-icon {
+        color: #ffffff;
+        font-size: 0.9rem;
+        background: #000000;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .span-2 {
+        grid-column: span 2;
+      }
+
+      /* Performance Blueprint: Defer Below-Fold Execution */
+      .portfolio-section,
+      .perfect-package-section,
+      .final-cta-section,
+      .premium-footer {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 600px;
+      }
+
+      /* 8. Portfolio Configurations */
+      .portfolio-section {
+        padding: 4rem max(1rem, 4vw);
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .category-header {
+        font-size: clamp(1.4rem, 4vw, 1.8rem);
+        font-weight: 600;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .grid-long {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: clamp(1rem, 3vw, 2rem);
+        margin-bottom: 5rem;
+      }
+      .grid-short {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: clamp(1rem, 3vw, 2rem);
+        margin-bottom: 5rem;
+      }
+
+      .video-card {
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 14px;
+        padding: 10px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+        transition: transform 0.3s;
+      }
+      .video-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      .video-wrapper-16-9 {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 14px;
+      }
+      .video-wrapper-9-16 {
+        position: relative;
+        padding-bottom: 177.77%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 14px;
+      }
+      .video-wrapper-16-9 iframe,
+      .video-wrapper-9-16 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .video-title {
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        padding: 0 0.5rem;
+      }
+
+      /* Minimalist Thumbnail Layout */
+      .grid-thumbnails {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: clamp(0.75rem, 2vw, 1.5rem);
+      }
+      .grid-thumbnails .video-card {
+        background: transparent !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border: none !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+      }
+      .grid-thumbnails .video-card:hover {
+        transform: translateY(-4px);
+      }
+      .thumbnail-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+      }
+      .thumbnail-wrapper img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .grid-thumbnails .video-card:hover .thumbnail-wrapper img {
+        transform: scale(1.04);
+      }
+
+      /* 9. Perfect Package System (Venn Diagram) */
+      .perfect-package-section {
+        padding: 4rem max(1rem, 4vw);
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .perfect-package-subtitle {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        color: #444444;
+        font-size: clamp(1.1rem, 3vw, 1.25rem);
+        margin-bottom: 3rem;
+      }
+
+      .venn-responsive-scaler {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .venn-container {
+        position: relative;
+        width: 500px;
+        height: 480px;
+        flex-shrink: 0;
+      }
+
+      .venn-circle {
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        mix-blend-mode: multiply;
+      }
+      .venn-quality {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(186, 230, 253, 0.7);
+        justify-content: flex-start;
+        padding-top: 45px;
+      }
+      .venn-speed {
+        bottom: 20px;
+        left: 20px;
+        background-color: rgba(254, 205, 211, 0.7);
+        justify-content: flex-end;
+        padding-bottom: 45px;
+      }
+      .venn-cost {
+        bottom: 20px;
+        right: 20px;
+        background-color: rgba(187, 247, 208, 0.7);
+        justify-content: flex-end;
+        padding-bottom: 45px;
+      }
+      .venn-circle h4 {
+        font-size: 1.3rem;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        margin-bottom: 2px;
+      }
+      .venn-circle p {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 0.9rem;
+        color: #444444;
+      }
+
+      .venn-center {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 140px;
+        height: 140px;
+        background: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+      }
+      .venn-center img {
+        max-width: 50%;
+        max-height: 50%;
+        object-fit: contain;
+      }
+
+      /* 10. High-Conversion CTA Block */
+      .final-cta-section {
+        padding: 6rem max(1rem, 4vw) 4rem max(1rem, 4vw);
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .cta-glass-card {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 40px;
+        padding: clamp(2.5rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4rem);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04);
+        text-align: left;
+      }
+      .cta-text-content {
+        max-width: 600px;
+      }
+      .cta-glass-card h2 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 800;
+        letter-spacing: -2px;
+        line-height: 1.15;
+        margin-bottom: 1.5rem;
+      }
+      .cta-glass-card p {
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        color: #444444;
+      }
+
+      .btn-cta-final {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        padding: 1.1rem 2.2rem;
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #000000;
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 100px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s;
+        white-space: nowrap;
+        justify-content: center;
+      }
+      .btn-cta-final:hover {
+        transform: translateY(-3px) scale(1.02);
+      }
+      .btn-cta-final span {
+        font-size: 1.3rem;
+        transition: transform 0.3s;
+      }
+      .btn-cta-final:hover span {
+        transform: translateX(4px);
+      }
+
+      /* 11. Premium Footer Architecture */
+      .premium-footer {
+        width: 90%;
+        max-width: 1100px;
+        margin: 2rem auto 3rem auto;
+        padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3rem) 2.5rem 3rem;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.7) 0%,
+          rgba(240, 244, 248, 0.6) 50%,
+          rgba(225, 235, 245, 0.5) 100%
+        );
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 36px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.03);
+      }
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding-bottom: 3rem;
+      }
+      .footer-brand {
+        max-width: 340px;
+      }
+      .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        margin-bottom: 1.2rem;
+      }
+      .footer-logo img {
+        height: 34px;
+        width: auto;
+      }
+      .footer-logo span {
+        font-family: "Pacifico", cursive;
+        font-size: 1.6rem;
+        color: #000000;
+      }
+      .footer-brand p {
+        font-size: 0.95rem;
+        color: #444444;
+      }
+
+      .footer-links-group {
+        display: flex;
+        gap: clamp(3rem, 8vw, 6rem);
+        flex-wrap: wrap;
+      }
+      .footer-col {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+      }
+      .footer-col h4 {
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-bottom: 0.5rem;
+      }
+      .footer-col a {
+        text-decoration: none;
+        color: #444444;
+        font-size: 0.95rem;
+        font-weight: 500;
+        transition:
+          color 0.2s,
+          transform 0.2s;
+      }
+      .footer-col a:hover {
+        color: #000000;
+        transform: translateX(3px);
+      }
+
+      .footer-middle-logo {
+        width: 100%;
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-bottom: 1.5rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        user-select: none;
+        pointer-events: none;
+      }
+      .footer-big-text {
+        font-family: "Pacifico", cursive;
+        font-size: clamp(3rem, 12vw, 6.5rem);
+        line-height: 1.1;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.12) 0%,
+          rgba(0, 0, 0, 0.02) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+      }
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: 0.88rem;
+        color: #555555;
+      }
+
+      /* 12. Media Queries */
+      @media (max-width: 1024px) {
+        .grid-thumbnails {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (max-width: 900px) {
+        .grid-long {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        .grid-short {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem;
+        }
+        .bento-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .span-2 {
+          grid-column: span 2;
+        }
+        .cta-glass-card {
+          flex-direction: column;
+          text-align: center;
+          gap: 2.5rem;
+        }
+        .cta-text-content {
+          max-width: 100%;
+        }
+        .btn-cta-final {
+          width: 100%;
+        }
+        .footer-top {
+          flex-direction: column;
+          gap: 2.5rem;
+        }
+        .footer-links-group {
+          gap: 4rem;
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+        .premium-nav {
+          width: 92%;
+          padding: 0 1.2rem;
+        }
+        .hero-ctas {
+          flex-direction: column;
+          width: 100%;
+        }
+        .hero-ctas .btn {
+          width: 100%;
+          text-align: center;
+        }
+        .grid-thumbnails {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
+        .venn-responsive-scaler {
+          overflow: hidden;
+          padding: 1rem 0;
+        }
+        .venn-container {
+          transform: scale(0.75);
+          margin: -40px 0;
+        }
+      }
+      @media (max-width: 600px) {
+        .bento-grid {
+          grid-template-columns: 1fr;
+        }
+        .span-2 {
+          grid-column: span 1;
+        }
+        .grid-short {
+          grid-template-columns: 1fr;
+          max-width: 360px;
+          margin: 0 auto 4rem auto;
+        }
+        .grid-thumbnails {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.75rem;
+        }
+        .venn-container {
+          transform: scale(0.58);
+          margin: -90px 0;
+        }
+        .premium-footer {
+          padding: 2.5rem 1.5rem 2rem 1.5rem;
+          width: 92%;
+        }
+        .footer-links-group {
+          flex-direction: column;
+          gap: 2rem;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+          gap: 1rem;
+        }
+      }
+      @media (max-width: 375px) {
+        .grid-thumbnails {
+          grid-template-columns: 1fr;
+          max-width: 280px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .venn-container {
+          transform: scale(0.48);
+          margin: -120px 0;
+        }
+        .premium-nav {
+          height: 64px;
+        }
+        .nav-cta .btn-nav {
+          padding: 0.55rem 1.2rem;
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="premium-nav">
+      <div class="nav-logo">
+        <a href="#">
+          <img
+            src="https://i.ibb.co/xSQP0sbn/Ujjwal-Jha.png"
+            alt="Uk Jha Logo"
+            decoding="async"
+          />
+          <span>Uk Jha</span>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="#service">Service</a>
+        <a href="#portfolio">Work</a>
+      </div>
+      <div class="nav-cta">
+        <a href="mailto:ujjwalkjha2021@gmail.com" class="btn-nav"
+          >Get Started</a
+        >
+      </div>
+    </nav>
+
+    <main class="glass-hero">
+      <div class="status-badge">
+        <span class="pulse-dot"></span>
+        Accepting New Clients Who Want Growth
+      </div>
+      <h1>High-Retention Video Editing for Creators & Brands.</h1>
+      <p>
+        I transform raw footage into highly engaging visual narratives. Crisp
+        pacing, cinematic styling, and artistic precision designed to capture
+        attention and drive growth.
+      </p>
+      <div class="hero-ctas">
+        <a href="mailto:ujjwalkjha2021@gmail.com" class="btn btn-primary"
+          >Let's Start</a
+        >
+        <a href="#portfolio" class="btn btn-secondary">View Best Edits</a>
+      </div>
+
+      <div class="software-track-container">
+        <div class="software-marquee">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Adobe_Premiere_Pro_CC_2026_icon.svg/1280px-Adobe_Premiere_Pro_CC_2026_icon.svg.png"
+            alt="Premiere Pro"
+            decoding="async"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/960px-Adobe_After_Effects_CC_icon.svg.png"
+            alt="After Effects"
+            decoding="async"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4d/DaVinci_Resolve_Studio.png"
+            alt="DaVinci Resolve"
+            decoding="async"
+          />
+          <img
+            src="https://img.utdstc.com/icon/82a/fdb/82afdbbf5d67c4e495e0b21eec7ba89cf1453a829629e20a2140b2d6e8dc6a18:600"
+            alt="Adobe Audition"
+            decoding="async"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Adobe_Photoshop_CC_2026_icon.svg/1280px-Adobe_Photoshop_CC_2026_icon.svg.png"
+            alt="Photoshop"
+            decoding="async"
+          />
+
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Adobe_Premiere_Pro_CC_2026_icon.svg/1280px-Adobe_Premiere_Pro_CC_2026_icon.svg.png"
+            alt="Premiere Pro"
+            decoding="async"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/960px-Adobe_After_Effects_CC_icon.svg.png"
+            alt="After Effects"
+            decoding="async"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4d/DaVinci_Resolve_Studio.png"
+            alt="DaVinci Resolve"
+            decoding="async"
+          />
+          <img
+            src="https://img.utdstc.com/icon/82a/fdb/82afdbbf5d67c4e495e0b21eec7ba89cf1453a829629e20a2140b2d6e8dc6a18:600"
+            alt="Adobe Audition"
+            decoding="async"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Adobe_Photoshop_CC_2026_icon.svg/1280px-Adobe_Photoshop_CC_2026_icon.svg.png"
+            alt="Photoshop"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </main>
+
+    <section id="service" class="services-section">
+      <h2 class="section-title">My Capabilities</h2>
+      <p class="section-subtitle">
+        Everything you need to scale your content visually, delivered with
+        agency-level precision.
+      </p>
+
+      <div class="bento-grid">
+        <div class="bento-card highlight span-2">
+          <div class="bento-icon">🎬</div>
+          <div>
+            <h3>YouTube Video Editing</h3>
+            <p>
+              Engaging narratives crafted with crisp pacing, dynamic B-roll, and
+              cinematic color grading. Built specifically to maximize audience
+              retention and watch time.
+            </p>
+          </div>
+          <ul class="feature-list">
+            <li>
+              <span class="check-icon">✓</span> Advanced Sound Design & Mixing
+            </li>
+            <li><span class="check-icon">✓</span> Cinematic Color Grading</li>
+            <li><span class="check-icon">✓</span> Custom Motion Graphics</li>
+            <li>
+              <span class="check-icon">✓</span> Retention-Optimized Pacing
+            </li>
+          </ul>
+        </div>
+        <div class="bento-card">
+          <div class="bento-icon">📱</div>
+          <div>
+            <h3>Short Form Edits</h3>
+            <p>
+              High-impact, fast-paced vertical content engineered to hook
+              viewers instantly.
+            </p>
+          </div>
+          <ul class="feature-list">
+            <li><span class="check-icon">✓</span> Viral Hook Engineering</li>
+            <li>
+              <span class="check-icon">✓</span> Dynamic, Animated Captions
+            </li>
+            <li><span class="check-icon">✓</span> Strategic Sound Effects</li>
+          </ul>
+        </div>
+        <div class="bento-card">
+          <div class="bento-icon">🎙️</div>
+          <div>
+            <h3>Podcast Edit</h3>
+            <p>
+              Clean multi-cam switching, dead-air removal, and audio polishing.
+            </p>
+          </div>
+          <ul class="feature-list">
+            <li>
+              <span class="check-icon">✓</span> Seamless Multi-Cam Switching
+            </li>
+            <li>
+              <span class="check-icon">✓</span> Studio-Grade Audio Cleanup
+            </li>
+            <li><span class="check-icon">✓</span> Dead-Air Removal</li>
+          </ul>
+        </div>
+        <div class="bento-card">
+          <div class="bento-icon">✂️</div>
+          <div>
+            <h3>Podcast Repurposing</h3>
+            <p>
+              Transforming long-form episodes into multiple bite-sized viral
+              clips.
+            </p>
+          </div>
+          <ul class="feature-list">
+            <li>
+              <span class="check-icon">✓</span> High-Value Moment Extraction
+            </li>
+            <li>
+              <span class="check-icon">✓</span> Platform-Native Formatting
+            </li>
+            <li><span class="check-icon">✓</span> Context-Building Intros</li>
+          </ul>
+        </div>
+        <div class="bento-card">
+          <div class="bento-icon">🖼️</div>
+          <div>
+            <h3>Thumbnail Design</h3>
+            <p>
+              Click-worthy, high-CTR visual hooks that make videos impossible to
+              scroll past.
+            </p>
+          </div>
+          <ul class="feature-list">
+            <li><span class="check-icon">✓</span> High-CTR Triggers</li>
+            <li><span class="check-icon">✓</span> Subject Retouching</li>
+            <li>
+              <span class="check-icon">✓</span> Scroll-Stopping Typography
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+      <h2 class="section-title">Best Work</h2>
+      <p class="section-subtitle">
+        A curated selection of narratives built to retain attention and drive
+        results.
+      </p>
+
+      <h3 class="category-header">Long Form Edits</h3>
+      <div class="grid-long">
+        <div class="video-card">
+          <div class="video-wrapper-16-9">
+            <iframe
+              src="https://www.youtube.com/embed/erqquWVKL4s"
+              title="Talking Head Sample"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-title">Talking Head Sample</div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper-16-9">
+            <iframe
+              src="https://www.youtube.com/embed/xXvU_pLQuNU"
+              title="Vlog Edit"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-title">Vlog Edit</div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper-16-9">
+            <iframe
+              src="https://www.youtube.com/embed/R_KdLNKSsaU"
+              title="Meditation Edit"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-title">Meditation Edit</div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper-16-9">
+            <iframe
+              src="https://www.youtube.com/embed/aCEZKsEOFjk"
+              title="Podcast Type Edit"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-title">Podcast Type Edit</div>
+        </div>
+      </div>
+
+      <h3 class="category-header">Short Form Edits</h3>
+      <div class="grid-short">
+        <div class="video-card">
+          <div class="video-wrapper-9-16">
+            <iframe
+              src="https://www.youtube.com/embed/yPItsCKLXa4"
+              title="Short Form Edit 1"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper-9-16">
+            <iframe
+              src="https://www.youtube.com/embed/1qbjX5xqUcw"
+              title="Short Form Edit 2"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper-9-16">
+            <iframe
+              src="https://www.youtube.com/embed/5wf1OOcP_P8"
+              title="Short Form Edit 3"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper-9-16">
+            <iframe
+              src="https://www.youtube.com/embed/yeArIwndH3Q"
+              title="Short Form Edit 4"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper-9-16">
+            <iframe
+              src="https://www.youtube.com/embed/Hr2-ZZrxD5s"
+              title="Short Form Edit 5"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper-9-16">
+            <iframe
+              src="https://www.youtube.com/embed/PlUQBidfo0U"
+              title="Short Form Edit 6"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="category-header">Thumbnail Portfolio</h3>
+      <div class="grid-thumbnails">
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.ibb.co/MxVkT4sN/Youtube-thumbnail-100-million-formula.png"
+              alt="Thumbnail 1"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.ibb.co/5gWKrQ3X/Admin.png"
+              alt="Thumbnail 2"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.ibb.co/FbnxztbF/youtube-thumbnail.png"
+              alt="Thumbnail 3"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://iili.io/ByjfrI1.md.png"
+              alt="Thumbnail 4"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.postimg.cc/nLhpyk6d/meditation-thumbnail.png"
+              alt="Thumbnail 5"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.postimg.cc/RZ1kVH76/podcast-thumbnail.png"
+              alt="Thumbnail 6"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://iili.io/ByjfSkB.md.png"
+              alt="Thumbnail 7"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.ibb.co/pBL00QSX/20-000-000-3.png"
+              alt="Thumbnail 8"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.ibb.co/HR0sG3f/thumbnail02.png"
+              alt="Thumbnail 9"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.ibb.co/FbnxztbF/youtube-thumbnail.png"
+              alt="Thumbnail 10"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://iili.io/ByjfUmP.md.png"
+              alt="Thumbnail 11"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://iili.io/Byjf87V.md.png"
+              alt="Thumbnail 12"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.ibb.co/RkhCbYx3/2500-1.png"
+              alt="Thumbnail 13"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.ibb.co/DDQC5Tw8/1.png"
+              alt="Thumbnail 14"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.ibb.co/gZJcQvw2/fdf.png"
+              alt="Thumbnail 15"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-wrapper">
+            <img
+              src="https://i.ibb.co/LXXZ0J94/You-Tube.png"
+              alt="Thumbnail 16"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="perfect-package-section">
+      <h2 class="section-title">The Perfect Package</h2>
+      <p class="perfect-package-subtitle">
+        Where speed, quality, and cost meet
+      </p>
+
+      <div class="venn-responsive-scaler">
+        <div class="venn-container">
+          <div class="venn-circle venn-quality">
+            <h4>Quality</h4>
+            <p>Premium Output</p>
+          </div>
+          <div class="venn-circle venn-speed">
+            <h4>Speed</h4>
+            <p>Fast Turnaround</p>
+          </div>
+          <div class="venn-circle venn-cost">
+            <h4>Cost</h4>
+            <p>Fraction of Price</p>
+          </div>
+          <div class="venn-center">
+            <img
+              src="https://i.ibb.co/xSQP0sbn/Ujjwal-Jha.png"
+              alt="Uk Jha Logo"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta-section">
+      <div class="cta-glass-card">
+        <div class="cta-text-content">
+          <h2>Ready to scale your content?</h2>
+          <p>
+            Let's collaborate to create engaging, high-retention videos that
+            capture attention and drive real growth.
+          </p>
+        </div>
+        <a href="mailto:ujjwalkjha2021@gmail.com" class="btn-cta-final">
+          Start a Project <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="premium-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <img
+              src="https://i.ibb.co/xSQP0sbn/Ujjwal-Jha.png"
+              alt="Uk Jha Logo"
+              decoding="async"
+            />
+            <span>Uk Jha</span>
+          </a>
+          <p>
+            Crafting high-retention visual narratives for digital creators,
+            business leaders, and global brands who want to leave a lasting
+            impact.
+          </p>
+        </div>
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <a href="#">Home</a>
+            <a href="#service">Services</a>
+            <a href="#portfolio">Our Work</a>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="mailto:ujjwalkjha2021@gmail.com">Email</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener"
+              >LinkedIn</a
+            >
+            <a href="https://youtube.com/" target="_blank" rel="noopener"
+              >YouTube</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-middle-logo">
+        <div class="footer-big-text">Uk Jha</div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Uk Jha. All rights reserved.</p>
+        <p>Designed with absolute precision.</p>
+      </div>
+    </footer>
+  </body>
+</html>
